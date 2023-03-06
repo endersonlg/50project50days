@@ -1,9 +1,6 @@
 import styled from "styled-components";
 
 export const ContainerProject17 = styled.div`
-  width: 100%;
-  height: 100%;
-  
   header{
     display: flex;
     justify-content:flex-end;
@@ -30,7 +27,7 @@ export const ContainerProject17 = styled.div`
 
   main{
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     padding: 24px 16px;
     display: flex;
     flex-wrap: wrap;
