@@ -13,7 +13,7 @@ export default createGlobalStyle`
   }
 
   body, button, input, textarea {
-    font: 400 16px 'Inter', sans-serif;
+    font: 400 16px 'Roboto', sans-serif;
   }
 
   ul {
