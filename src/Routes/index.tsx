@@ -20,7 +20,7 @@ import { Project6 } from '../pages/Project6'
 import { Project7 } from '../pages/Project7'
 import { Project8 } from '../pages/Project8'
 import { Project9 } from '../pages/Project9'
-import { Project22 } from '../pages/Projeto22'
+import { Project22 } from '../pages/Project22'
 import { ListProject } from '../pages/_ListProject'
 
 export function Routes () {
