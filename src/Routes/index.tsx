@@ -25,6 +25,7 @@ import { ListProject } from '../pages/_ListProject'
 import { Project23 } from '../pages/Project23'
 import { Project24 } from '../pages/Project24'
 import { Project25 } from '../pages/Project25'
+import { Project26 } from '../pages/Project26'
 
 
 export function Routes () {
@@ -56,6 +57,7 @@ export function Routes () {
       <Route path='project/23' element={<Project23/>}/> 
       <Route path='project/24' element={<Project24/>}/>
       <Route path='project/25' element={<Project25/>}/>
+      <Route path='project/26' element={<Project26/>}/>
     </Switch>
   )
 }
