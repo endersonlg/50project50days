@@ -84,6 +84,9 @@ export function ListProject(){
           <li>
             <Link to="project/26">Project 26</Link>
           </li>
+          <li>
+            <Link to="project/27">Project 27</Link>
+          </li>
         </ul>
       </nav>
     </ContainerListProjects>
