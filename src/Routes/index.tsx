@@ -30,6 +30,7 @@ import { Project27 } from '../pages/Project27'
 import { Project28 } from '../pages/Project28'
 import { Project29 } from '../pages/Project29'
 import { Project30 } from '../pages/Project30'
+import { Project31 } from '../pages/Project31'
 
 
 export function Routes () {
@@ -66,6 +67,7 @@ export function Routes () {
       <Route path='project/28' element={<Project28/>}/>
       <Route path='project/29' element={<Project29/>}/>
       <Route path='project/30' element={<Project30/>}/>
+      <Route path='project/31' element={<Project31/>}/>
     </Switch>
   )
 }
