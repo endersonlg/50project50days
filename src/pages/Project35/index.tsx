@@ -33,8 +33,6 @@ export function Project35(){
     })
   },[])
 
-  console.log(showImage)
-
   return (
     <ContainerProject35>
       <Carrossel>
