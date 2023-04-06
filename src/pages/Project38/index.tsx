@@ -30,19 +30,19 @@ export function Project38(){
             <li>
               <button type="button" onClick={()=>handleSelectImage(1)}>
                   <Package size={24} weight="fill" />
-                  <span>Home</span>
+                  <span>Work</span>
                 </button>
             </li>
             <li>
               <button type="button" onClick={()=>handleSelectImage(2)}>
                   <BookOpen size={24} weight="fill" />
-                  <span>Home</span>
+                  <span>Blog</span>
                 </button>
             </li>
             <li>
                 <button type="button" onClick={()=>handleSelectImage(3)}>
                   <UsersThree size={24} weight="fill" />
-                  <span>Home</span>
+                  <span>About Us</span>
                 </button>
             </li>
           </ul>
