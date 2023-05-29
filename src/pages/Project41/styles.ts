@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const ContainerProject41 = styled.div`
   width: 100%;
@@ -8,52 +8,52 @@ export const ContainerProject41 = styled.div`
   justify-content: center;
   align-items: center;
 
-  >div{
+  > div {
     padding: 24px 4px;
     border: 3px solid black;
     border-radius: 8px;
 
     text-align: center;
 
-    h2{
+    h2 {
       font-weight: 500;
       font-size: 24px;
       margin-bottom: 16px;
     }
 
-    p{
+    p {
       margin-bottom: 36px;
     }
 
-    div{
+    div {
       display: flex;
       gap: 8px;
 
       margin-bottom: 24px;
     }
 
-    small{
+    small {
       display: block;
-      margin:0 auto;
+      margin: 0 auto;
       max-width: 400px;
-      
-      padding:10px;
+
+      padding: 10px;
       border-radius: 6px;
-      
+
       background-color: #eaeaea;
-      color:#777;
-      
+      color: #777;
+
       line-height: 20px;
     }
   }
 `
 
-interface InputNumberProps{
-  hasValue: boolean;
+interface InputNumberProps {
+  hasValue: boolean
 }
 
 export const InputNumber = styled.input.attrs({
-  type:'number'
+  type: 'number',
 })<InputNumberProps>`
   width: 100px;
   height: 120px;
@@ -61,8 +61,8 @@ export const InputNumber = styled.input.attrs({
   font-size: 72px;
   text-align: center;
 
-  border:1px solid ${({hasValue})=>hasValue ? '#3498db' : '#eee'};
-  border-radius:6px;
+  border: 1px solid ${({ hasValue }) => (hasValue ? '#3498db' : '#eee')};
+  border-radius: 6px;
   box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.25);
 
   /* Chrome, Safari, Edge, Opera */
@@ -73,7 +73,7 @@ export const InputNumber = styled.input.attrs({
   }
 
   /* Firefox */
-  &[type=number] {
+  &[type='number'] {
     -moz-appearance: textfield;
   }
 `

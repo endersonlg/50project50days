@@ -9,15 +9,15 @@ export const ContainerProject12 = styled.div`
   flex-direction: column;
   align-items: center;
 
-  padding:48px 32px;
+  padding: 48px 32px;
 
-  h1{
+  h1 {
     margin-bottom: 32px;
   }
-`;
+`
 
-interface CardProps{
-  isOpen?:boolean;
+interface CardProps {
+  isOpen?: boolean
 }
 
 export const Card = styled.div<CardProps>`
@@ -26,33 +26,32 @@ export const Card = styled.div<CardProps>`
   width: 100%;
   max-width: 600px;
 
-  padding:24px;
+  padding: 24px;
 
-  background-color: ${({isOpen})=>isOpen ? '#fff' : 'transparent'};
-  box-shadow: ${({isOpen})=>isOpen&&'0 3px 6px rgb(0 0 0 / 10%), 0 3px 6px rgb(0 0 0 / 10%)'};
+  background-color: ${({ isOpen }) => (isOpen ? '#fff' : 'transparent')};
+  box-shadow: ${({ isOpen }) =>
+    isOpen && '0 3px 6px rgb(0 0 0 / 10%), 0 3px 6px rgb(0 0 0 / 10%)'};
 
-  border:1px solid #9fa4a8;
+  border: 1px solid #9fa4a8;
   border-radius: 8px;
   margin-bottom: 24px;
 
-
-  h3{
-    margin-bottom: ${({isOpen})=>isOpen&&'32px'};
+  h3 {
+    margin-bottom: ${({ isOpen }) => isOpen && '32px'};
   }
 
-
-  &:last-child{
+  &:last-child {
     margin-bottom: 0;
   }
 
-  p{
-    display: ${({isOpen})=>isOpen ? 'unset' : 'none'};
+  p {
+    display: ${({ isOpen }) => (isOpen ? 'unset' : 'none')};
   }
 
-  button{
+  button {
     position: absolute;
-    top:24px;
+    top: 24px;
     right: 24px;
-    color:${({isOpen})=>isOpen?'#9fa4a8':'#000'};
+    color: ${({ isOpen }) => (isOpen ? '#9fa4a8' : '#000')};
   }
 `

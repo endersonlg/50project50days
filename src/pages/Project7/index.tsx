@@ -1,6 +1,6 @@
-import { ContainerProject7 } from "./styles";
+import { ContainerProject7 } from './styles'
 
-export function Project7(){
+export function Project7() {
   return (
     <ContainerProject7>
       <div>

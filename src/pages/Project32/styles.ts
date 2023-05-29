@@ -1,24 +1,24 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const ContainerProject32 = styled.div`
- width: 100%;
- height: 100%;
+  width: 100%;
+  height: 100%;
 
- display: flex;
- flex-direction: column;
- align-items: center;
- justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
- h1{
-  font-size: 24px;
-  margin-bottom: 24px;
- }
- 
- >div{
+  h1 {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+
+  > div {
     display: flex;
     flex-direction: column;
     gap: 16px;
- }
+  }
 `
 
 export const ToggleSwitch = styled.div`
@@ -26,7 +26,7 @@ export const ToggleSwitch = styled.div`
   align-items: center;
   gap: 8px;
 
-  label{
+  label {
     position: relative;
     display: inline-block;
     width: 80px;
@@ -46,21 +46,21 @@ export const ToggleSwitch = styled.div`
       right: 0;
       bottom: 0;
       background-color: #d0d0d0;
-      -webkit-transition: .4s;
-      transition: .4s;
+      -webkit-transition: 0.4s;
+      transition: 0.4s;
       border-radius: 40px;
     }
 
     @keyframes GrowDuringProgress {
-      0%{
+      0% {
         height: 34px;
         width: 34px;
       }
-      50%{
+      50% {
         height: 38px;
         width: 38px;
       }
-      100%{
+      100% {
         height: 34px;
         width: 34px;
       }
@@ -68,22 +68,20 @@ export const ToggleSwitch = styled.div`
 
     span:before {
       position: absolute;
-      content: "";
+      content: '';
       height: 34px;
       width: 34px;
       left: 3px;
       bottom: 3px;
       background-color: white;
-      -webkit-transition: .4s;
-      transition: .4s;
+      -webkit-transition: 0.4s;
+      transition: 0.4s;
       border-radius: 50%;
-
     }
 
-    input:focus + span:before{
+    input:focus + span:before {
       animation: GrowDuringProgress 0.2s linear forwards;
     }
-    
 
     input:checked + span {
       background-color: #8e44ad;

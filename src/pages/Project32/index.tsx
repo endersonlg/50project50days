@@ -1,14 +1,14 @@
-import { useState } from "react";
-import { ContainerProject32, ToggleSwitch } from "./styles";
+import { useState } from 'react'
+import { ContainerProject32, ToggleSwitch } from './styles'
 
-export function Project32(){
-  const [good,setGood] = useState(false)
-  const [cheap,setCheap] = useState(false)
-  const [fast,setFast] = useState(false)
+export function Project32() {
+  const [good, setGood] = useState(false)
+  const [cheap, setCheap] = useState(false)
+  const [fast, setFast] = useState(false)
 
-   function handleCheckGood(checked:boolean){
-    if(checked){
-      if(fast&&cheap){
+  function handleCheckGood(checked: boolean) {
+    if (checked) {
+      if (fast && cheap) {
         setFast(false)
       }
       setGood(true)
@@ -17,9 +17,9 @@ export function Project32(){
     setGood(false)
   }
 
-  function handleCheckCheap(checked:boolean){
-    if(checked){
-      if(good&&fast){
+  function handleCheckCheap(checked: boolean) {
+    if (checked) {
+      if (good && fast) {
         setGood(false)
       }
       setCheap(true)
@@ -28,9 +28,9 @@ export function Project32(){
     setCheap(false)
   }
 
-  function handleCheckFast(checked:boolean){
-    if(checked){
-      if(good&&cheap){
+  function handleCheckFast(checked: boolean) {
+    if (checked) {
+      if (good && cheap) {
         setCheap(false)
       }
       setFast(true)
@@ -45,10 +45,10 @@ export function Project32(){
       <div>
         <ToggleSwitch>
           <label htmlFor="checkbox-good">
-            <input 
-              type="checkbox" 
-              id="checkbox-good" 
-              onChange={(e)=>handleCheckGood(e.target.checked)}
+            <input
+              type="checkbox"
+              id="checkbox-good"
+              onChange={(e) => handleCheckGood(e.target.checked)}
               checked={good}
             />
             <span />
@@ -58,10 +58,10 @@ export function Project32(){
 
         <ToggleSwitch>
           <label htmlFor="checkbox-cheap">
-            <input 
-              type="checkbox" 
-              id="checkbox-cheap"              
-              onChange={(e)=>handleCheckCheap(e.target.checked)}
+            <input
+              type="checkbox"
+              id="checkbox-cheap"
+              onChange={(e) => handleCheckCheap(e.target.checked)}
               checked={cheap}
             />
             <span />
@@ -71,10 +71,10 @@ export function Project32(){
 
         <ToggleSwitch>
           <label htmlFor="checkbox-fast">
-            <input 
-              type="checkbox" 
-              id="checkbox-fast"             
-              onChange={(e)=>handleCheckFast(e.target.checked)}
+            <input
+              type="checkbox"
+              id="checkbox-fast"
+              onChange={(e) => handleCheckFast(e.target.checked)}
               checked={fast}
             />
             <span />

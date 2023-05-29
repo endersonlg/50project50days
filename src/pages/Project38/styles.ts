@@ -1,24 +1,24 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const ContainerProject38 = styled.div`
-  background-color:rgba(155, 89, 182, 0.7);
-  height:100%;
-  width:100%;
+  background-color: rgba(155, 89, 182, 0.7);
+  height: 100%;
+  width: 100%;
 
-  display:flex;
-  align-items:center;
-  justify-content:center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `
 
 export const Phone = styled.div`
-  display:flex;
-  flex-direction:column;
-  justify-content:flex-end;
-  position:relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
 
-  width:340px;
-  height:600px;
-  background-color:#FFF;
+  width: 340px;
+  height: 600px;
+  background-color: #fff;
 
   border: 3px solid #eee;
   border-radius: 15px;
@@ -26,50 +26,47 @@ export const Phone = styled.div`
   overflow: hidden;
 `
 
-interface ImageProps{
-  isSelected: boolean;
+interface ImageProps {
+  isSelected: boolean
 }
 
 export const Image = styled.img<ImageProps>`
-  position:absolute;
-  top:0;
-  
+  position: absolute;
+  top: 0;
+
   width: 100%;
-  height:calc(100% - 70px);
-  
+  height: calc(100% - 70px);
+
   object-fit: cover;
 
-  opacity:${({isSelected})=>isSelected ? 1 : 0};
+  opacity: ${({ isSelected }) => (isSelected ? 1 : 0)};
 
-  transition:opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
 `
 
 export const Navigation = styled.nav`
-  padding:12px;
+  padding: 12px;
 
-  ul{
+  ul {
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
 
-    button{
-      color:#777;
-      transition:color 0.2s ease-in-out;
+    button {
+      color: #777;
+      transition: color 0.2s ease-in-out;
 
-      svg{
-        margin-bottom:4px;
+      svg {
+        margin-bottom: 4px;
       }
 
-      &:hover{
-        color:#8e44ad;
+      &:hover {
+        color: #8e44ad;
       }
 
-      span{
-        font-size:12px;
+      span {
+        font-size: 12px;
         display: block;
       }
-
     }
-
   }
-
 `

@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled, { css } from 'styled-components'
 
 export const ContainerProject34 = styled.div`
   width: 100%;
@@ -9,7 +9,7 @@ export const ContainerProject34 = styled.div`
   align-items: center;
   justify-content: center;
 
-  >div{
+  > div {
     width: 100px;
     height: 80px;
     display: flex;
@@ -17,75 +17,73 @@ export const ContainerProject34 = styled.div`
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    position:relative;
-
-
+    position: relative;
   }
 
-  h3{
+  h3 {
     font-size: 20px;
     margin: 8px;
   }
 
   @keyframes ZoomInAndOut {
-    0%{
-      transform: scale(1.0);
+    0% {
+      transform: scale(1);
     }
-   50%{
+    50% {
       transform: scale(1.5);
     }
-    100%{
-      transform: scale(1.0);
+    100% {
+      transform: scale(1);
     }
-  } 
+  }
 
-  h2{
+  h2 {
     font-size: 32px;
     margin: 8px;
-    animation: ZoomInAndOut .2s forwards;
+    animation: ZoomInAndOut 0.2s forwards;
   }
 
-  button{
-    border:1px solid #BBB;
-    background-color: #EEE;
+  button {
+    border: 1px solid #bbb;
+    background-color: #eee;
     border-radius: 4px;
-    padding:2px 4px;
-
+    padding: 2px 4px;
   }
 `
-interface CountProps{
-  isVisible: boolean;
+interface CountProps {
+  isVisible: boolean
 }
 
 export const Count = styled.span<CountProps>`
-
   @keyframes RotateNumber {
-    0%{
-      transform: translate(-50%,-50%) rotate(180deg);
+    0% {
+      transform: translate(-50%, -50%) rotate(180deg);
     }
-    30%{
-      transform: translate(-50%,-50%) rotate(0deg);
+    30% {
+      transform: translate(-50%, -50%) rotate(0deg);
     }
-    70%{
-      transform: translate(-50%,-50%) rotate(0deg);
+    70% {
+      transform: translate(-50%, -50%) rotate(0deg);
     }
-    100%{
-      transform: translate(-50%,-50%) rotate(-180deg);
+    100% {
+      transform: translate(-50%, -50%) rotate(-180deg);
     }
-  } 
+  }
 
-  position:absolute;
+  position: absolute;
   top: 50%;
-  left:50%;
+  left: 50%;
   transform-origin: bottom center;
-  transform: translate(-50%,-50%) rotate(-180deg);
+  transform: translate(-50%, -50%) rotate(-180deg);
 
   color: #3498db;
   font-size: 48px;
 
-  ${({isVisible})=>isVisible&&css`
-    animation-name:RotateNumber;
-    animation-duration:1s;
-    animation-iteration-count: infinite;
-  `}
+  ${({ isVisible }) =>
+    isVisible &&
+    css`
+      animation-name: RotateNumber;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+    `}
 `

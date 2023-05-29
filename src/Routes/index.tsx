@@ -1,4 +1,4 @@
-import {Routes as Switch,Route}  from 'react-router-dom'
+import { Routes as Switch, Route } from 'react-router-dom'
 import { Project1 } from '../pages/Project1'
 import { Project10 } from '../pages/Project10'
 import { Project11 } from '../pages/Project11'
@@ -42,52 +42,51 @@ import { Project39 } from '../pages/Project39'
 import { Project40 } from '../pages/Project40'
 import { Project41 } from '../pages/Project41'
 
-
-export function Routes () {
+export function Routes() {
   return (
     <Switch>
-      <Route path="/" element={<ListProject/>} />
-      <Route path='project/1' element={<Project1/>}/>
-      <Route path='project/2' element={<Project2/>}/>
-      <Route path='project/3' element={<Project3/>}/>
-      <Route path='project/4' element={<Project4/>}/>
-      <Route path='project/5' element={<Project5/>}/>
-      <Route path='project/6' element={<Project6/>}/>
-      <Route path='project/7' element={<Project7/>}/>
-      <Route path='project/8' element={<Project8/>}/>
-      <Route path='project/9' element={<Project9/>}/>
-      <Route path='project/10' element={<Project10/>}/>
-      <Route path='project/11' element={<Project11/>}/>
-      <Route path='project/12' element={<Project12/>}/>
-      <Route path='project/13' element={<Project13/>}/>
-      <Route path='project/14' element={<Project14/>}/>
-      <Route path='project/15' element={<Project15/>}/>
-      <Route path='project/16' element={<Project16/>}/>
-      <Route path='project/17' element={<Project17/>}/>
-      <Route path='project/18' element={<Project18/>}/>
-      <Route path='project/19' element={<Project19/>}/>
-      <Route path='project/20' element={<Project20/>}/>
-      <Route path='project/21' element={<Project21/>}/>
-      <Route path='project/22' element={<Project22/>}/>
-      <Route path='project/23' element={<Project23/>}/> 
-      <Route path='project/24' element={<Project24/>}/>
-      <Route path='project/25' element={<Project25/>}/>
-      <Route path='project/26' element={<Project26/>}/>
-      <Route path='project/27' element={<Project27/>}/>
-      <Route path='project/28' element={<Project28/>}/>
-      <Route path='project/29' element={<Project29/>}/>
-      <Route path='project/30' element={<Project30/>}/>
-      <Route path='project/31' element={<Project31/>}/>
-      <Route path='project/32' element={<Project32/>}/>
-      <Route path='project/33' element={<Project33/>}/>
-      <Route path='project/34' element={<Project34/>}/>
-      <Route path='project/35' element={<Project35/>}/>
-      <Route path='project/36' element={<Project36/>}/>
-      <Route path='project/37' element={<Project37/>}/>
-      <Route path='project/38' element={<Project38/>}/>
-      <Route path='project/39' element={<Project39/>}/>
-      <Route path='project/40' element={<Project40/>}/>
-      <Route path='project/41' element={<Project41/>}/>
+      <Route path="/" element={<ListProject />} />
+      <Route path="project/1" element={<Project1 />} />
+      <Route path="project/2" element={<Project2 />} />
+      <Route path="project/3" element={<Project3 />} />
+      <Route path="project/4" element={<Project4 />} />
+      <Route path="project/5" element={<Project5 />} />
+      <Route path="project/6" element={<Project6 />} />
+      <Route path="project/7" element={<Project7 />} />
+      <Route path="project/8" element={<Project8 />} />
+      <Route path="project/9" element={<Project9 />} />
+      <Route path="project/10" element={<Project10 />} />
+      <Route path="project/11" element={<Project11 />} />
+      <Route path="project/12" element={<Project12 />} />
+      <Route path="project/13" element={<Project13 />} />
+      <Route path="project/14" element={<Project14 />} />
+      <Route path="project/15" element={<Project15 />} />
+      <Route path="project/16" element={<Project16 />} />
+      <Route path="project/17" element={<Project17 />} />
+      <Route path="project/18" element={<Project18 />} />
+      <Route path="project/19" element={<Project19 />} />
+      <Route path="project/20" element={<Project20 />} />
+      <Route path="project/21" element={<Project21 />} />
+      <Route path="project/22" element={<Project22 />} />
+      <Route path="project/23" element={<Project23 />} />
+      <Route path="project/24" element={<Project24 />} />
+      <Route path="project/25" element={<Project25 />} />
+      <Route path="project/26" element={<Project26 />} />
+      <Route path="project/27" element={<Project27 />} />
+      <Route path="project/28" element={<Project28 />} />
+      <Route path="project/29" element={<Project29 />} />
+      <Route path="project/30" element={<Project30 />} />
+      <Route path="project/31" element={<Project31 />} />
+      <Route path="project/32" element={<Project32 />} />
+      <Route path="project/33" element={<Project33 />} />
+      <Route path="project/34" element={<Project34 />} />
+      <Route path="project/35" element={<Project35 />} />
+      <Route path="project/36" element={<Project36 />} />
+      <Route path="project/37" element={<Project37 />} />
+      <Route path="project/38" element={<Project38 />} />
+      <Route path="project/39" element={<Project39 />} />
+      <Route path="project/40" element={<Project40 />} />
+      <Route path="project/41" element={<Project41 />} />
     </Switch>
   )
 }

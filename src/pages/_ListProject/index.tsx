@@ -1,7 +1,7 @@
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { ContainerListProjects } from './styles'
 
-export function ListProject(){
+export function ListProject() {
   return (
     <ContainerListProjects>
       <nav>

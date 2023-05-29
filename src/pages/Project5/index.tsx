@@ -1,21 +1,20 @@
-import React, { useEffect, useState } from 'react';
-import { ContainerProject5 } from './styles';
+import React, { useEffect, useState } from 'react'
+import { ContainerProject5 } from './styles'
 
-export function Project5(){
-  const [loadingPercentage,setLoadingPercentage] = useState(0);
+export function Project5() {
+  const [loadingPercentage, setLoadingPercentage] = useState(0)
 
-  useEffect(()=>{
-    (async ()=>{
-      if(loadingPercentage < 100){
-        await new Promise(()=>{
+  useEffect(() => {
+    ;(async () => {
+      if (loadingPercentage < 100) {
+        await new Promise(() => {
           setTimeout(() => {
-            setLoadingPercentage(loadingPercentage+1);
-          }, 10);
+            setLoadingPercentage(loadingPercentage + 1)
+          }, 10)
         })
       }
     })()
-  },[loadingPercentage])
-
+  }, [loadingPercentage])
 
   return (
     <ContainerProject5 loadingPercentage={loadingPercentage}>

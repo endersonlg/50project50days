@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const ContainerProject33 = styled.div`
   width: 100%;
@@ -7,7 +7,7 @@ export const ContainerProject33 = styled.div`
   background-color: #7bdaf3;
   padding: 48px 24px 24px;
 
-  >button{
+  > button {
     position: fixed;
     top: 24px;
     right: 24px;
@@ -16,19 +16,18 @@ export const ContainerProject33 = styled.div`
     align-items: center;
     gap: 4px;
     background-color: #9ec862;
-    padding:8px;
+    padding: 8px;
     border-radius: 6px;
     color: #fff;
 
-    transition: filter .2s;
-    
+    transition: filter 0.2s;
 
-    &:hover{
+    &:hover {
       filter: brightness(0.96);
     }
   }
 
-  >div{
+  > div {
     display: flex;
     gap: 24px;
     flex-wrap: wrap;
@@ -38,12 +37,12 @@ export const ContainerProject33 = styled.div`
 export const Note = styled.div`
   display: flex;
   flex-direction: column;
-  
+
   width: 400px;
   height: 400px;
   box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
 
-  >div{
+  > div {
     width: 100%;
     padding: 8px;
     background-color: #9ec862;
@@ -51,26 +50,26 @@ export const Note = styled.div`
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap:8px;
+    gap: 8px;
 
-    >button{
-      color: #FFF;
+    > button {
+      color: #fff;
       line-height: 0;
     }
   }
 
-  textarea{
-    flex:1;
+  textarea {
+    flex: 1;
     width: 100%;
 
     resize: none;
 
-    border:0;
+    border: 0;
     padding: 24px;
 
     font-size: 24px;
 
-    &:focus{
+    &:focus {
       outline: none;
     }
   }

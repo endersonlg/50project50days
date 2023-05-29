@@ -1,16 +1,15 @@
-import { useState } from "react";
-import { BigCup, ContainerProject16, ContentSmallCup, SmallCup } from "./styles";
+import { useState } from 'react'
+import { BigCup, ContainerProject16, ContentSmallCup, SmallCup } from './styles'
 
-export function Project16(){
-  const [quantity,setQuantity] = useState(0);
+export function Project16() {
+  const [quantity, setQuantity] = useState(0)
 
-  function handleSelectQuantity(value: number):void{
-    if(value===quantity){
-      setQuantity(value - 1);
-      return;
+  function handleSelectQuantity(value: number): void {
+    if (value === quantity) {
+      setQuantity(value - 1)
+      return
     }
-    setQuantity(value);
-
+    setQuantity(value)
   }
 
   return (
@@ -21,7 +20,7 @@ export function Project16(){
 
         <BigCup quantity={quantity}>
           <div>
-            <span>{2-(0.25 * quantity)}L</span>
+            <span>{2 - 0.25 * quantity}L</span>
             <small>Remained</small>
           </div>
           <div>
@@ -29,22 +28,18 @@ export function Project16(){
           </div>
         </BigCup>
 
-        <p>
-          Select how many glasses of water that you have drank
-        </p>
+        <p>Select how many glasses of water that you have drank</p>
         <ContentSmallCup>
-          {
-            Array.from({length:8},(_,index)=>(
-              <SmallCup 
-                type="button" 
-                key={`small-cup-${index.toString()}`} 
-                fill={index+1<=quantity}
-                onClick={()=>handleSelectQuantity(index+1)}
-              >
-                250 ml
-              </SmallCup>
-            ))
-          }
+          {Array.from({ length: 8 }, (_, index) => (
+            <SmallCup
+              type="button"
+              key={`small-cup-${index.toString()}`}
+              fill={index + 1 <= quantity}
+              onClick={() => handleSelectQuantity(index + 1)}
+            >
+              250 ml
+            </SmallCup>
+          ))}
         </ContentSmallCup>
       </div>
     </ContainerProject16>

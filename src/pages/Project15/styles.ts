@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const ContainerProject15 = styled.div`
   width: 100%;
@@ -10,16 +10,16 @@ export const ContainerProject15 = styled.div`
   align-items: center;
   justify-content: center;
 
-  >div{
+  > div {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap:24px;
-    
+    gap: 24px;
+
     width: 100%;
     max-width: 600px;
 
-    >div{
+    > div {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -27,12 +27,12 @@ export const ContainerProject15 = styled.div`
       width: 200px;
       height: 200px;
 
-      svg{
+      svg {
         color: #fff;
         margin-bottom: 24px;
       }
 
-      h3{
+      h3 {
         font-size: 64px;
         color: #fff;
         font-weight: 500;
@@ -40,10 +40,9 @@ export const ContainerProject15 = styled.div`
         margin-bottom: 8px;
       }
 
-      span{
+      span {
         color: #fff;
       }
     }
-
   }
 `

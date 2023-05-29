@@ -1,23 +1,23 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const ContainerProject9 = styled.div`
   width: 100%;
   height: 100%;
 
-  background: rgba(161,100,233);
+  background: rgba(161, 100, 233);
 
   display: flex;
   justify-content: center;
   align-items: center;
 
-  >div{
+  > div {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap:32px;
+    gap: 32px;
 
-    >button{
+    > button {
       padding: 24px 48px;
       background: rebeccapurple;
       border-radius: 4px;
@@ -26,9 +26,9 @@ export const ContainerProject9 = styled.div`
 
       transition: color 0.2s ease-out;
 
-      &:hover{
+      &:hover {
         filter: brightness(0.96);
       }
     }
   }
-`;
+`

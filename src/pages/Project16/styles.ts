@@ -1,15 +1,15 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const ContainerProject16 = styled.div`
   width: 100%;
   height: 100%;
 
-  background-color: #3494E4;
+  background-color: #3494e4;
   display: flex;
   justify-content: center;
-  padding:32px;
+  padding: 32px;
 
-  >div{
+  > div {
     width: 100%;
     max-width: 600px;
 
@@ -17,31 +17,31 @@ export const ContainerProject16 = styled.div`
     flex-direction: column;
     align-items: center;
 
-    h1{
+    h1 {
       color: #fff;
       margin-bottom: 16px;
     }
 
-    h3{
+    h3 {
       color: #fff;
       margin-bottom: 32px;
     }
 
-    p{
+    p {
       color: #fff;
       margin-bottom: 8px;
     }
   }
 `
 
-interface BigCupProps{
-  quantity:number;
+interface BigCupProps {
+  quantity: number
 }
 
 export const BigCup = styled.div<BigCupProps>`
   width: 150px;
   height: 350px;
-  background-color: #FFF;
+  background-color: #fff;
   overflow: hidden;
 
   border: 3px solid #144fc6;
@@ -53,7 +53,7 @@ export const BigCup = styled.div<BigCupProps>`
 
   margin-bottom: 32px;
 
-  div{
+  div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -64,50 +64,49 @@ export const BigCup = styled.div<BigCupProps>`
 
     transition: height 0.5s linear;
   }
-  
 
   div:first-child {
-    background-color: #FFF;
-    height:${({quantity})=>(100/8)*(8-quantity)}%;
-    span{
-      color:#144fc6;
-      font-size:24px;
+    background-color: #fff;
+    height: ${({ quantity }) => (100 / 8) * (8 - quantity)}%;
+    span {
+      color: #144fc6;
+      font-size: 24px;
       font-weight: 600;
     }
-    small{
-      color:#144fc6;
+    small {
+      color: #144fc6;
     }
   }
 
   div:last-child {
-    height:${({quantity})=>(100/8)*quantity}%;
+    height: ${({ quantity }) => (100 / 8) * quantity}%;
     background-color: #6ab3f8;
 
-    span{
-      color:#144fc6;
-      font-size:32px;
+    span {
+      color: #144fc6;
+      font-size: 32px;
       font-weight: 600;
     }
   }
-`;
+`
 
 export const ContentSmallCup = styled.div`
   display: flex;
   flex-wrap: wrap;
-  gap:16px;
+  gap: 16px;
 
-  max-width:300px;
-`;
+  max-width: 300px;
+`
 
-interface SmallCupProps{
-  fill:boolean;
+interface SmallCupProps {
+  fill: boolean
 }
 
 export const SmallCup = styled.button<SmallCupProps>`
   width: 50px;
   height: 100px;
-  background-color:${({fill})=>fill?'#6ab3f8':'#fff'};
-  
+  background-color: ${({ fill }) => (fill ? '#6ab3f8' : '#fff')};
+
   border: 3px solid #144fc6;
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -117,7 +116,7 @@ export const SmallCup = styled.button<SmallCupProps>`
 
   text-align: center;
 
-  color:${({fill})=>fill?'#fff':'#144fc6'};
+  color: ${({ fill }) => (fill ? '#fff' : '#144fc6')};
 
-  transition:all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 `

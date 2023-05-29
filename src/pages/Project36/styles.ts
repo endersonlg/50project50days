@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled, { css } from 'styled-components'
 
 export const ContainerProject36 = styled.div`
   width: 100%;
@@ -10,7 +10,7 @@ export const ContainerProject36 = styled.div`
 
   background-color: #111;
 
-  >div{
+  > div {
     width: 400px;
     height: 500px;
 
@@ -20,37 +20,27 @@ export const ContainerProject36 = styled.div`
   }
 `
 
-const COLORS = [
-  '#e74c3c', 
-  '#8e44ad', 
-  '#3498db', 
-  '#e67e22', 
-  '#2ecc71'
-]
-
+const COLORS = ['#e74c3c', '#8e44ad', '#3498db', '#e67e22', '#2ecc71']
 
 export const Square = styled.div`
   width: 16px;
   height: 16px;
 
-  transition:all 2s ease;
+  transition: all 2s ease;
 
   background-color: rgb(29, 29, 29);
-  box-shadow:rgb(0, 0, 0) 0px 0px 2px;
+  box-shadow: rgb(0, 0, 0) 0px 0px 2px;
 
-  &:hover{
+  &:hover {
     transition-duration: 0s;
 
-    ${()=>{
-      const color = COLORS[Math.floor(Math.random() * COLORS.length)];
+    ${() => {
+      const color = COLORS[Math.floor(Math.random() * COLORS.length)]
 
       return css`
-        background-color:${color};
-        box-shadow: ${`0 0 2px ${color}, 0 0 10px ${color}`}
+        background-color: ${color};
+        box-shadow: ${`0 0 2px ${color}, 0 0 10px ${color}`};
       `
     }}
   }
-
-
-  
 `

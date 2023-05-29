@@ -1,31 +1,30 @@
-import { Heart } from "phosphor-react";
-import styled from "styled-components";
+import { Heart } from 'phosphor-react'
+import styled from 'styled-components'
 
 export const ContainerProject29 = styled.div`
-  padding:24px;
+  padding: 24px;
   width: 100%;
-  div{
+  div {
     margin: 0 auto;
-    width:300px;
+    width: 300px;
 
     text-align: center;
 
-    h3{
+    h3 {
       display: flex;
       align-items: center;
       justify-content: center;
     }
 
-    small{
+    small {
       display: block;
       margin-bottom: 16px;
     }
   }
 `
 
-
 export const ImageBackground = styled.div`
-  position:relative;
+  position: relative;
   background-image: url('https://images.unsplash.com/photo-1504215680853-026ed2a45def?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80');
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   width: 100%;
@@ -35,10 +34,9 @@ export const ImageBackground = styled.div`
   cursor: pointer;
 `
 
-
 interface EffectProps {
-  x:number;
-  y:number;
+  x: number
+  y: number
 }
 
 export const Effect = styled(Heart)<EffectProps>`
@@ -50,8 +48,8 @@ export const Effect = styled(Heart)<EffectProps>`
   }
 
   position: absolute;
-  top:${({y})=>y}px;
-  left:${({x})=>x}px;
+  top: ${({ y }) => y}px;
+  left: ${({ x }) => x}px;
 
   width: 100px;
   height: 100px;

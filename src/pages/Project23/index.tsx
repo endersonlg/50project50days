@@ -1,10 +1,10 @@
-import { ContainerProject23 } from "./styles";
+import { ContainerProject23 } from './styles'
 
-export function Project23(){
+export function Project23() {
   return (
     <ContainerProject23>
-      <span/>
-      <span/>
+      <span />
+      <span />
     </ContainerProject23>
   )
 }

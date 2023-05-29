@@ -1,7 +1,7 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const ContainerProject6 = styled.div`
-  padding:8px;
+  padding: 8px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,13 +9,13 @@ export const ContainerProject6 = styled.div`
 
   text-align: center;
 
-  h1{
+  h1 {
     margin-bottom: 24px;
   }
 `
 
 interface CardProps {
-  show:boolean
+  show: boolean
 }
 
 export const Card = styled.div<CardProps>`
@@ -26,8 +26,8 @@ export const Card = styled.div<CardProps>`
   height: 200px;
   width: 400px;
 
-  background:steelblue;
-  border-radius:16px;
+  background: steelblue;
+  border-radius: 16px;
 
   color: #fff;
   font-size: 48px;
@@ -36,16 +36,15 @@ export const Card = styled.div<CardProps>`
 
   transition: transform 0.5s linear;
 
-  &:nth-child(odd){
-    transform: ${({show})=> show ? 'translateX(0)' : 'translateX(400%)'};
+  &:nth-child(odd) {
+    transform: ${({ show }) => (show ? 'translateX(0)' : 'translateX(400%)')};
   }
 
-  &:nth-child(even){
-    transform: ${({show})=> show ? 'translateX(0)' : 'translateX(-400%)'};
+  &:nth-child(even) {
+    transform: ${({ show }) => (show ? 'translateX(0)' : 'translateX(-400%)')};
   }
 
-
-  &:last-child{
+  &:last-child {
     margin-bottom: 0;
   }
-`;
+`

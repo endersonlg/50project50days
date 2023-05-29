@@ -10,25 +10,21 @@ export const ContainerProject20 = styled.div`
   align-items: center;
   justify-content: center;
 
-
-
-  button{
-    position:relative;
+  button {
+    position: relative;
     background-color: purple;
-  
-    color: #fff;  
-    font-size:14px;
+
+    color: #fff;
+    font-size: 14px;
     letter-spacing: 2px;
     padding: 20px 30px;
     overflow: hidden;
-
-
   }
 `
 
 interface EffectProps {
-  x:number;
-  y:number;
+  x: number
+  y: number
 }
 
 export const Effect = styled.div<EffectProps>`
@@ -40,12 +36,12 @@ export const Effect = styled.div<EffectProps>`
   }
 
   position: absolute;
-  top:${({y})=>y}px;
-  left:${({x})=>x}px;
+  top: ${({ y }) => y}px;
+  left: ${({ x }) => x}px;
 
   width: 100px;
   height: 100px;
-  background-color:#FFF;
+  background-color: #fff;
 
   transform: translate(-50%, -50%) scale(0);
   animation: scale 0.5s ease-out;
