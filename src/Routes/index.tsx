@@ -45,6 +45,7 @@ import { Project42 } from '../pages/Project42'
 import { Project43 } from '../pages/Project43'
 import { Project44 } from '../pages/Project44'
 import { Project45 } from '../pages/Project45'
+import { Carousel } from '../pages/Carousel'
 
 export function Routes() {
   return (
@@ -95,6 +96,8 @@ export function Routes() {
       <Route path="project/43" element={<Project43 />} />
       <Route path="project/44" element={<Project44 />} />
       <Route path="project/45" element={<Project45 />} />
+
+      <Route path="tests/carousel" element={<Carousel />} />
     </Switch>
   )
 }
