@@ -141,6 +141,9 @@ export function ListProject() {
           <li>
             <Link to="project/45">Project 45</Link>
           </li>
+          <li>
+            <Link to="project/46">Project 46</Link>
+          </li>
         </ul>
         <strong>tests</strong>
         <ul>
